@@ -1,11 +1,12 @@
 import './header.css';
 import './HomePage.css';
 
-export function HomePage() {
 
+
+export function HomePage() {
     return (
-       <>
-           <div classNameName="header">
+        <>
+         <div className="header">
       <div className="left-section">
         <a href="index.html" className="header-link">
           <img className="logo"
@@ -187,6 +188,6 @@ export function HomePage() {
         </div>
       </div>
     </div>
-    </>
+      </>       
     );
 }
