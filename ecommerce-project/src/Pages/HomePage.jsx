@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { Header } from '../components/Header';
 import "./HomePage.css";
-import { formatMoney, formtatMoney } from '../utils/money'
+import { formatMoney} from '../utils/money'
 
 export function HomePage( {cart} ){
   const [products, setProducts] = useState([]);
@@ -12,8 +12,6 @@ useEffect(() => {
   .then((response) => {
     setProducts(response.data);
   });
-
-
 }, []);
 
   return (
